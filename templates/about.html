@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('index') }}" class="logo-link">
+        <img src="{{ url_for('static', filename='images/SDBHtml.png') }}" alt="SDBHtml Logo" class="logo">
+    </a>
+    <div class="interface">
+        <div class="button-bar">
+            <a href="{{ url_for('index') }}" class="button">Главная</a>
+            <a href="{{ url_for('about') }}" class="button">О нас</a>
+            <a href="{{ url_for('contact') }}" class="button">Контакты</a>
+        </div>
+        <div class="content">
+            <h1>О НАС</h1>
+            <p>Этот сайт — мой учебный проект. Я изучаю веб-разработку, чтобы однажды создавать крутые и полезные сайты. Здесь я тестирую свои навыки и делюсь результатами. Пролистай главную страницу, чтобы посмотреть мои работы!</p>
+        </div>
+    </div>
+</body>
+</html>
